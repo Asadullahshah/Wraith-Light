@@ -1,0 +1,201 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  overflow: auto; /* Allows scrolling */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Edge, and Safari */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* CSS Code */
+/* Add this in a CSS file such as App.css */
+
+/* .landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  color: white; 
+} */
+
+.main-container {
+  width: 100%;
+  /* overflow-y: hidden; */
+}
+
+.landing {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  color: white; */
+  /* color: white; */
+  /* height: 100vh; */
+  width: 100%;
+  /* display: flex; */
+  overflow: hidden;
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-size: cover; */
+}
+
+.BG-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* height: 100vh; */
+  object-fit: 100% auto;
+  z-index: -1;
+}
+
+.logo-image {
+  /* position: absolute; */
+  width: 50%; /* Adjust the logo size as needed */
+}
+
+.coming-soon-container {
+  /* position: relative; */
+  /* top: 0; */
+  margin-top: -1.41em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  height: auto;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.logo-section {
+  margin-top: 0rem;
+}
+
+
+.divider-bar {
+  /* margin-top: 2rem; */
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d1015ff;
+}
+
+.divider-bar-image1 {
+  position: absolute;
+  top: -2.4em;
+  left: 0;
+  width: 100%;
+  /* max-width: 600px; */
+}
+
+.divider-bar-image2 {
+  position: absolute;
+  top: -2.4em;
+  width: 5em;
+}
+
+.bottom {
+  top: 0;
+}
+
+.content-section {
+  text-align: center;
+  /* margin-top: 2rem; */
+  padding: 0 1rem;
+}
+
+.symbol-logo {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.green-dash-underline {
+  width: 8rem;
+  margin: 0 0 2rem auto;
+}
+
+.content-text {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blur-line {
+  margin-bottom: 3rem;
+  margin-top: 1rem  ;
+  width: 80%;
+}
+
+.blur-line-image {
+  width: 100%;
+}
