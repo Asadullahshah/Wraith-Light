@@ -6,6 +6,7 @@
 body {
   overflow: auto; /* Allows scrolling */
   scrollbar-width: none; /* Hides scrollbar in Firefox */
+  background-color: #111519;
 }
 
 body::-webkit-scrollbar {
