@@ -66,8 +66,27 @@ body::-webkit-scrollbar {
   color: white; 
 } */
 
+@font-face {
+  font-family: 'BahnSchrift'; /* The name you'll use in your app */
+  src: url('./assets/fonts/Bahnschrift Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BahnSchrift'; /* Same name for bold version */
+  src: url('./assets/fonts/BAHNSCHRIFT  Light .TTF') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
 .main-container {
   width: 100%;
+  /* height: auto; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
   /* overflow-y: hidden; */
 }
 
@@ -84,8 +103,9 @@ body::-webkit-scrollbar {
   /* color: white; */
   /* height: 100vh; */
   width: 100%;
+  height: 100vh;
   /* display: flex; */
-  overflow: hidden;
+  /* overflow: hidden; */
   /* flex-direction: row; */
   /* align-items: center; */
   /* justify-content: center; */
@@ -100,9 +120,11 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
   /* height: 100vh; */
-  object-fit: 100% auto;
+  /* object-fit: 100% auto; */
   z-index: -1;
 }
 
@@ -112,20 +134,27 @@ body::-webkit-scrollbar {
 }
 
 .coming-soon-container {
-  /* position: relative; */
+  position: relative;
+  width: 100%;
+  margin-top: -0.9rem;
+  overflow: hidden;
+  /* height: 70vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
   /* top: 0; */
-  margin-top: -1.41em;
-  display: flex;
+  /* margin-top: -1.41em; */
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 70vh;
-  height: auto;
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: 'Arial', sans-serif;
-  color: white;
+  /* min-height: 70vh; */
+  /* height: auto; */
+  /* background-size: 100% auto; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* font-family: 'Arial', sans-serif; */
+  /* color: white; */ 
 }
 
 .logo-section {
@@ -136,35 +165,46 @@ body::-webkit-scrollbar {
 .divider-bar {
   /* margin-top: 2rem; */
   width: 100%;
+  height: auto;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0d1015ff;
+  /* background-color: #0d1015ff; */
 }
 
 .divider-bar-image1 {
   position: absolute;
-  top: -2.4em;
-  left: 0;
+  /* top: -2.4em; */
+  /* top: 0; */
+  /* left: 0; */
   width: 100%;
   /* max-width: 600px; */
 }
 
 .divider-bar-image2 {
   position: absolute;
-  top: -2.4em;
-  width: 5em;
+  /* top: -2.4em; */
+  /* top: 0; */
+  width: 5rem;
 }
 
 .bottom {
-  top: 0;
+  bottom: 0.5rem;
 }
 
 .content-section {
-  text-align: center;
-  /* margin-top: 2rem; */
-  padding: 0 1rem;
+  /* text-align: center;
+  margin-top: 2rem; 
+  padding: 0 1rem; */
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; /* Centers the text */
+  /* color: white;  */
+  z-index: 2; /* Ensures content stays above the background */
+  /* padding: 20px; */
 }
 
 .symbol-logo {
@@ -176,6 +216,11 @@ body::-webkit-scrollbar {
 .coming-soon-title {
   font-size: 2rem;
   font-weight: bold;
+  text-shadow: 
+    1px 0 4px rgba(96, 195, 174, 0.3),  
+    -1px 0 4px rgba(96, 195, 174, 0.3),  
+    0 1px 4px rgba(96, 195, 174, 0.3),   
+    0 -1px 4px rgba(96, 195, 174, 0.3);
   margin: 0;
 }
 
@@ -188,6 +233,11 @@ body::-webkit-scrollbar {
   font-size: 1rem;
   max-width: 600px;
   margin: 0 auto;
+  text-shadow: 
+    1px 0 4px rgba(96, 195, 174, 0.3),  
+    -1px 0 4px rgba(96, 195, 174, 0.3),  
+    0 1px 4px rgba(96, 195, 174, 0.3),   
+    0 -1px 4px rgba(96, 195, 174, 0.3);
 }
 
 .blur-line {
@@ -198,4 +248,46 @@ body::-webkit-scrollbar {
 
 .blur-line-image {
   width: 100%;
+}
+
+.content-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* height: 100vh; */
+  height: 60vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* justify-content: center; */
+  z-index: -2;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 40vh;
+  top: auto;
+  bottom: 0;
+  z-index: -3;
+}
+
+.bg-image {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  width: 100%;
+  /* height: 70vh; */
+  z-index: -1;
+  /* height: auto; */
+  object-fit: cover;
+  /* height: auto; */
+}
+
+.bg-image.second {
+  top: auto;
+  bottom: 0;
+  z-index: -2;
+  /* width: 100%; */
+  /* height: 30vh; */
 }
