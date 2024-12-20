@@ -10,6 +10,7 @@ import BlurGreenLine from "./assets/Blur Green Line.svg";
 import GreenDashUnderline from "./assets/Green Dash Underline.svg";
 import RORBG from "./assets/BG2.svg";
 import Bottom from "./assets/Bottom Image.svg";
+import discordIcon from "./assets/discord-icon.svg"
 
 const ComingSoon = () => {
     return (
@@ -51,17 +52,18 @@ const ComingSoon = () => {
                     <img src={RORBG} alt="Background Top" className="bg-image" />
                     <div className="content-section">
                         <h1 className="coming-soon-title" style={{ fontFamily: 'BahnSchrift', fontWeight: 'normal', color: '#e0e5e3' }}>Coming Soon!</h1>
+                        <img src={BlurGreenLine} alt="Blur Green Line" className="blur-line-image" />
+                        {/* <p className="content-text" style={{ fontFamily: 'BahnSchrift', fontWeight: 'lighter', color: '#e0e5e3' }}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod
+                            magna non nisl vulputate, eget tempor urna bibendum. Donec pulvinar
+                            risus ut orci fermentum hendrerit.
+                        </p> */}
+                        <img src={discordIcon} alt="Discord Icon" className="discord-icon" />
                         <img
                             src={GreenDashUnderline}
                             alt="Green Dash Underline"
                             className="green-dash-underline"
                         />
-                        <p className="content-text" style={{ fontFamily: 'BahnSchrift', fontWeight: 'lighter', color: '#e0e5e3' }}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod
-                            magna non nisl vulputate, eget tempor urna bibendum. Donec pulvinar
-                            risus ut orci fermentum hendrerit.
-                        </p>
-                        <img src={BlurGreenLine} alt="Blur Green Line" className="blur-line-image" />
                     </div>
                 </div>
                 <div className="divider-bar">
